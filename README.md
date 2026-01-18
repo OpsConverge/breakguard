@@ -6,8 +6,8 @@ This repository is for **bug reports, feature requests, and community feedback**
 
 ## 🔗 Links
 
-- **Marketplace:** [Install BreakGuard from VS Code Marketplace](https://marketplace.visualstudio.com/items?itemName=OpsConverge.breakguard)
 - **Open VSX:** [Install from Open VSX Registry](https://open-vsx.org/extension/opsconverge/breakguard)
+- **VS Code Marketplace:** Coming soon (currently available on Open VSX)
 
 ## 🐛 Reporting Bugs
 
@@ -24,7 +24,7 @@ Have an idea for a new feature? Use the [Feature Request template](https://githu
 
 ## ❓ Questions & Support
 
-- For usage questions, check the [Extension README](https://marketplace.visualstudio.com/items?itemName=OpsConverge.breakguard) in the Marketplace
+- For usage questions, check the [Extension README](https://open-vsx.org/extension/opsconverge/breakguard) on Open VSX
 - For technical questions, open a discussion or issue
 
 ## 📋 What to Include in Bug Reports

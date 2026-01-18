@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Marketplace Listing
+    url: https://marketplace.visualstudio.com/items?itemName=OpsConverge.breakguard
+    about: View BreakGuard on the VS Code Marketplace for installation and documentation
+  - name: Open VSX Listing
+    url: https://open-vsx.org/extension/opsconverge/breakguard
+    about: Install BreakGuard from the Open VSX Registry (for non-Microsoft VS Code installations)

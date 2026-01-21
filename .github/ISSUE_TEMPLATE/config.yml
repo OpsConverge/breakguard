@@ -1,11 +1,11 @@
 blank_issues_enabled: false
 contact_links:
   - name: Report a Bug (BreakGuard)
-    url: https://github.com/OpsConverge/breakguard/issues/new?template=breakguard_feedback.yml
+    url: https://github.com/OpsConverge/breakguard/issues/new?template=breakguard_feedback.md
     about: Report incorrect results, missing call sites, crashes, or unexpected behavior
 
   - name: Request a Feature (BreakGuard)
-    url: https://github.com/OpsConverge/breakguard/issues/new?template=breakguard_feature.yml
+    url: https://github.com/OpsConverge/breakguard/issues/new?template=breakguard_feature.md
     about: Suggest an improvement or new capability
 
   - name: Quick Feedback (Google Form)

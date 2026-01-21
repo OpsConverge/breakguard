@@ -1,68 +1,62 @@
----
-name: Bug Report
-about: Create a report to help us improve BreakGuard
-title: '[BUG] '
-labels: bug
-assignees: ''
----
+name: BreakGuard Bug / Feedback
+description: Report incorrect results, missing call sites, crashes, or general feedback
+title: "[BreakGuard] "
+labels: ["bug", "feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for using **BreakGuard**.
 
-## 🐛 Bug Description
+        ⚠️ Please **do not paste source code, file paths, or private repository details** unless absolutely necessary.
+        The diagnostics section below may be auto-filled by the extension and is anonymized.
 
-A clear and concise description of what the bug is.
+  - type: textarea
+    id: intent
+    attributes:
+      label: What were you trying to do?
+      description: Briefly describe the change or analysis you were performing.
+      placeholder: Example: I changed a function signature to see what downstream code would break.
+    validations:
+      required: true
 
-## 🔄 Steps to Reproduce
+  - type: textarea
+    id: actual
+    attributes:
+      label: What happened?
+      description: What did BreakGuard report or do that seemed incorrect or unexpected?
+    validations:
+      required: true
 
-1. Go to '...'
-2. Click on '...'
-3. Analyze file '...'
-4. See error
+  - type: textarea
+    id: expected
+    attributes:
+      label: What did you expect to happen?
+      description: What result would you have expected instead?
+    validations:
+      required: true
 
-## ✅ Expected Behavior
+  - type: checkboxes
+    id: issue_type
+    attributes:
+      label: Issue category (check all that apply)
+      options:
+        - label: Missed a breaking change
+        - label: Reported a breaking change that wasn’t real
+        - label: Call sites missing or incorrect
+        - label: Incorrect downstream impact
+        - label: Performance issue
+        - label: Error or crash
+        - label: UI / usability issue
+        - label: General feedback
 
-A clear and concise description of what you expected to happen.
-
-## ❌ Actual Behavior
-
-What actually happened instead.
-
-## 📸 Screenshots
-
-If applicable, add screenshots to help explain your problem.
-
-## 🔧 Environment
-
-- **VS Code Version:** [e.g., 1.85.0]
-- **BreakGuard Version:** [e.g., 0.1.0]
-- **OS:** [e.g., Windows 11, macOS 14.2, Ubuntu 22.04]
-- **Node.js Version:** [if known, e.g., 18.17.0]
-- **TypeScript Version:** [if known, e.g., 5.2.2]
-
-## 📋 Additional Context
-
-- **Project Type:** [e.g., Monorepo, Single package, React app]
-- **TypeScript Config:** [e.g., Standard, Path aliases, Project references]
-- **Git Available:** [Yes/No]
-
-## 📝 Debug Information
-
-If debug logging is enabled (`"impactAnalyzer.enableDebugLogging": true`), please include relevant output from the "BreakGuard Debug" output channel:
-
-```
-[Paste debug output here]
-```
-
-## 🔍 What You've Tried
-
-- [ ] Restarted VS Code
-- [ ] Cleared extension cache (`BreakGuard: Clear Analysis Cache`)
-- [ ] Refreshed the view (`BreakGuard: Refresh View`)
-- [ ] Checked for extension updates
-- [ ] Disabled other extensions to check for conflicts
-
-## 💡 Possible Workaround
-
-If you've found a workaround, please share it here.
-
----
-
-**Thank you for reporting this bug!** We'll investigate and get back to you.
+  - type: textarea
+    id: diagnostics
+    attributes:
+      label: Diagnostics (auto-filled)
+      description: |
+        This section may be pre-filled by the extension with anonymized version,
+        environment, and usage summary. You may remove or edit it.
+      render: text
+    validations:
+      required: false

@@ -1,56 +1,37 @@
----
-name: Feature Request
-about: Suggest an idea for BreakGuard
-title: '[FEATURE] '
-labels: enhancement
-assignees: ''
----
+name: BreakGuard Feature Request
+description: Suggest an idea or improvement for BreakGuard
+title: "[BreakGuard] "
+labels: ["enhancement", "feedback"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to suggest a feature!
 
-## 💡 Feature Description
+        You don’t need to design the solution — describing the problem is enough.
 
-A clear and concise description of the feature you'd like to see.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+      description: What’s currently hard, slow, or error-prone when using BreakGuard?
+      placeholder: Example: I can see breaking changes, but I still have to manually track where fixes are needed.
+    validations:
+      required: true
 
-## 🎯 Use Case
+  - type: textarea
+    id: context
+    attributes:
+      label: When does this problem show up?
+      description: Describe the workflow or situation where this becomes painful.
+      placeholder: Example: Large monorepo with shared UI utilities.
+    validations:
+      required: true
 
-Describe the problem this feature would solve or the workflow it would improve.
-
-**Example:**
-- Currently, when I do X, I have to manually do Y
-- With this feature, X would automatically handle Y
-- This would save time when working with large codebases
-
-## 🔧 Proposed Solution
-
-How do you envision this feature working?
-
-- **UI Changes:** [e.g., New command, New view, Settings panel]
-- **Behavior:** [e.g., Automatic detection, Manual trigger, Background process]
-- **Integration:** [e.g., Works with existing features, Standalone feature]
-
-## 🔄 Alternative Solutions
-
-Have you considered other approaches? Describe them here.
-
-## 📋 Examples
-
-If applicable, provide examples of similar features in other extensions or tools.
-
-## 🎨 Mockups/Wireframes
-
-If you have ideas for how the UI should look, describe them here or link to mockups.
-
-## ✅ Benefits
-
-- [ ] Improves developer productivity
-- [ ] Reduces errors
-- [ ] Better user experience
-- [ ] Works with existing workflow
-- [ ] Addresses edge case
-
-## 🔗 Related Issues
-
-Link to any related issues or discussions.
-
----
-
-**Thank you for the suggestion!** We'll review this feature request and consider it for future releases.
+  - type: textarea
+    id: idea
+    attributes:
+      label: Any ideas on how this could work? (optional)
+      description: Optional — feel free to skip this if you’re not sure.
+    validations:
+      required: false

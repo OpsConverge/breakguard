@@ -1,55 +1,74 @@
-# BreakGuard
+# BreakGuard Feedback & Support
 
-This repository is for **bug reports, feature requests, and community feedback** for the BreakGuard VS Code extension.
+This repository is used for **bug reports, feature requests, and community feedback**
+for the **BreakGuard VS Code extension**.
 
-**⚠️ Note:** This repository does **not** contain source code. The source code is maintained in a private repository.
-
-## 🔗 Links
-
-- **Open VSX:** [Install from Open VSX Registry](https://open-vsx.org/extension/opsconverge/breakguard)
-- **VS Code Marketplace:** Coming soon (currently available on Open VSX)
-
-## 🐛 Reporting Bugs
-
-Please use the [Bug Report template](https://github.com/OpsConverge/breakguard/issues/new?template=bug_report.md) to report issues.
-
-**Before reporting a bug:**
-1. Check existing issues to see if it's already reported
-2. Make sure you're using the latest version
-3. Try reproducing the issue with debug logging enabled (`"impactAnalyzer.enableDebugLogging": true`)
-
-## 💡 Feature Requests
-
-Have an idea for a new feature? Use the [Feature Request template](https://github.com/OpsConverge/breakguard/issues/new?template=feature_request.md).
-
-## ❓ Questions & Support
-
-- For usage questions, check the [Extension README](https://open-vsx.org/extension/opsconverge/breakguard) on Open VSX
-- For technical questions, open a discussion or issue
-
-## 📋 What to Include in Bug Reports
-
-- VS Code version
-- BreakGuard version
-- Operating system
-- Steps to reproduce
-- Expected behavior
-- Actual behavior
-- Screenshots (if applicable)
-- Output from "BreakGuard Debug" channel (if debug logging is enabled)
-
-## 🤝 Contributing
-
-While source code contributions are not accepted in this repository (code is private), we welcome:
-- Bug reports with detailed information
-- Feature requests with use cases
-- Documentation improvements (via issues)
-- Community discussions and feedback
-
-## 📄 License
-
-BreakGuard is proprietary software. See the license terms in the VS Code Marketplace listing.
+> ⚠️ This repository does **not** contain source code.  
+> The BreakGuard source code is maintained in a private repository.
 
 ---
 
-**Thank you for using BreakGuard!** 🎉
+## 🔗 Install BreakGuard
+
+- **Open VSX:** https://open-vsx.org/extension/opsconverge/breakguard  
+- **VS Code Marketplace:** https://marketplace.visualstudio.com/items?itemName=OpsConverge.breakguard
+
+---
+
+## 🐛 Report a Bug or Incorrect Result
+
+If BreakGuard:
+- missed a breaking change
+- reported something incorrectly
+- showed missing or wrong call sites
+- crashed or behaved unexpectedly
+
+👉 **Report it here:**  
+https://github.com/OpsConverge/breakguard/issues/new?template=breakguard_feedback.yml
+
+The issue template will guide you and may be auto-filled with **anonymized diagnostics**
+(version, environment, usage counts only).
+
+**Please avoid pasting:**
+- source code
+- file paths
+- repository names
+- private data
+
+---
+
+## 💡 Request a Feature or Improvement
+
+Have an idea to improve BreakGuard or your workflow?
+
+👉 **Request a feature:**  
+https://github.com/OpsConverge/breakguard/issues/new?template=breakguard_feature.yml
+
+You don’t need a full design — describing the problem is enough.
+
+---
+
+## 📝 Quick Feedback (Optional)
+
+For short, anonymous feedback (no GitHub account required):
+
+👉 **Google Form:**  
+<PASTE YOUR GOOGLE FORM LINK HERE>
+
+---
+
+## ❓ Questions & Support
+
+- Usage questions: see the extension listing on Open VSX / Marketplace
+- Bugs & feedback: open an issue using the templates above
+
+---
+
+## 📄 License
+
+BreakGuard is proprietary software.  
+License terms are listed in the VS Code Marketplace.
+
+---
+
+Thank you for helping improve BreakGuard 🎉

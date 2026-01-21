@@ -15,7 +15,7 @@ body:
     attributes:
       label: What problem are you trying to solve?
       description: What's currently hard, slow, or error-prone when using BreakGuard?
-      placeholder: Example: I can see breaking changes, but I still have to manually track where fixes are needed.
+      placeholder: "Example: I can see breaking changes, but I still have to manually track where fixes are needed."
     validations:
       required: true
 
@@ -24,7 +24,7 @@ body:
     attributes:
       label: When does this problem show up?
       description: Describe the workflow or situation where this becomes painful.
-      placeholder: Example: Large monorepo with shared UI utilities.
+      placeholder: "Example: Large monorepo with shared UI utilities."
     validations:
       required: true
 

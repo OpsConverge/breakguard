@@ -24,7 +24,7 @@ If BreakGuard:
 - crashed or behaved unexpectedly
 
 👉 **Report it here:**  
-https://github.com/OpsConverge/breakguard/issues/new?template=breakguard_feedback.yml
+https://github.com/OpsConverge/breakguard/issues/new?template=breakguard_feedback.md
 
 The issue template will guide you and may be auto-filled with **anonymized diagnostics**
 (version, environment, usage counts only).
@@ -42,7 +42,7 @@ The issue template will guide you and may be auto-filled with **anonymized diagn
 Have an idea to improve BreakGuard or your workflow?
 
 👉 **Request a feature:**  
-https://github.com/OpsConverge/breakguard/issues/new?template=breakguard_feature.yml
+https://github.com/OpsConverge/breakguard/issues/new?template=breakguard_feature.md
 
 You don’t need a full design — describing the problem is enough.
 

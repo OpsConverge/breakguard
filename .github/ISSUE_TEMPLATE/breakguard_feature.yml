@@ -8,13 +8,13 @@ body:
       value: |
         Thanks for taking the time to suggest a feature!
 
-        You don’t need to design the solution — describing the problem is enough.
+        You don't need to design the solution - describing the problem is enough.
 
   - type: textarea
     id: problem
     attributes:
       label: What problem are you trying to solve?
-      description: What’s currently hard, slow, or error-prone when using BreakGuard?
+      description: What's currently hard, slow, or error-prone when using BreakGuard?
       placeholder: Example: I can see breaking changes, but I still have to manually track where fixes are needed.
     validations:
       required: true
@@ -32,6 +32,6 @@ body:
     id: idea
     attributes:
       label: Any ideas on how this could work? (optional)
-      description: Optional — feel free to skip this if you’re not sure.
+      description: Optional - feel free to skip this if you're not sure.
     validations:
       required: false

@@ -8,7 +8,7 @@ body:
       value: |
         Thanks for using **BreakGuard**.
 
-        ⚠️ Please **do not paste source code, file paths, or private repository details** unless absolutely necessary.
+        Please **do not paste source code, file paths, or private repository details** unless absolutely necessary.
         The diagnostics section below may be auto-filled by the extension and is anonymized.
 
   - type: textarea
@@ -42,7 +42,7 @@ body:
       label: Issue category (check all that apply)
       options:
         - label: Missed a breaking change
-        - label: Reported a breaking change that wasn’t real
+        - label: Reported a breaking change that wasn't real
         - label: Call sites missing or incorrect
         - label: Incorrect downstream impact
         - label: Performance issue

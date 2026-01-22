@@ -28,8 +28,8 @@ Feedback with **clear examples or repro steps** is especially valuable at this s
 
 ## 🔗 Install BreakGuard
 
-- **Open VSX:** :contentReference[oaicite:0]{index=0}  
-- **VS Code Marketplace:** :contentReference[oaicite:1]{index=1}
+- **Open VSX:** https://open-vsx.org/extension/opsconverge/breakguard  
+- **VS Code Marketplace:** https://marketplace.visualstudio.com/items?itemName=OpsConverge.breakguard
 
 ---
 

@@ -1,0 +1,150 @@
+# .github/ISSUE_TEMPLATE/bug_report.yml
+name: "🐞 Bug Report"
+description: Report a reproducible issue in BreakGuard (Preview).
+title: "[Bug]: "
+labels: ["bug", "preview", "needs-triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ⚠️ **Preview Release**
+
+        BreakGuard is in preview 🚧  
+        False positives, missing downstreams, and incomplete analysis are expected.
+        Reports with clear **expected vs actual behavior** and **repro steps** are the fastest to triage 🙏
+
+        🔒 **Support Repo Notice**
+        This is a public support repository for BreakGuard.
+        The extension source code is maintained in a private repository, so external PRs may not be possible.
+        You can still help a lot by sharing a minimal repro repo or steps ✅
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: 🧾 Summary
+      description: One clear sentence describing the bug.
+      placeholder: "Breaking change detected, but no downstream files are reported despite clear call sites."
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: ✅ Expected behavior
+      description: What should have happened?
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: ❌ Actual behavior
+      description: What actually happened?
+    validations:
+      required: true
+
+  - type: textarea
+    id: repro
+    attributes:
+      label: 🔁 Reproduction steps
+      description: Step-by-step instructions to reproduce the issue.
+      render: markdown
+    validations:
+      required: true
+
+  - type: textarea
+    id: minimal_example
+    attributes:
+      label: 📦 Minimal repro (optional)
+      description: Link to a repo, branch, commit, or gist that reproduces the issue.
+
+  - type: checkboxes
+    id: access
+    attributes:
+      label: 🔐 Access & repro
+      options:
+        - label: I do NOT have access to the private BreakGuard source repo
+        - label: I can share a minimal public repro repo or steps
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: 📜 Logs / diagnostics (optional)
+      description: Paste relevant logs if available.
+      render: shell
+
+  - type: checkboxes
+    id: impact
+    attributes:
+      label: 🎯 Impact area
+      options:
+        - label: Incorrect breaking-change detection
+        - label: Missing downstream impacts
+        - label: False positives
+        - label: False negatives
+        - label: Performance / hangs
+        - label: UI / UX issue
+        - label: Crash / exception
+
+  - type: dropdown
+    id: frequency
+    attributes:
+      label: 🔄 Frequency
+      options:
+        - Always
+        - Often
+        - Sometimes
+        - Rare
+        - First time
+    validations:
+      required: true
+
+  - type: input
+    id: breakguard_version
+    attributes:
+      label: 🧩 BreakGuard version
+      placeholder: "e.g. 0.3.1"
+    validations:
+      required: true
+
+  - type: input
+    id: vscode_version
+    attributes:
+      label: 🖥️ VS Code version
+    validations:
+      required: true
+
+  - type: input
+    id: os
+    attributes:
+      label: 💻 OS
+    validations:
+      required: true
+
+  - type: input
+    id: typescript_version
+    attributes:
+      label: 📘 TypeScript version (optional)
+
+  - type: dropdown
+    id: repo_type
+    attributes:
+      label: 🗂️ Repository type
+      options:
+        - Single package
+        - Monorepo
+        - Library / SDK
+        - App
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: confirmation
+    attributes:
+      label: 🧠 Quick check
+      options:
+        - label: I searched existing issues
+          required: true
+        - label: I can reproduce this consistently
+        - label: I can provide a repro repo if requested

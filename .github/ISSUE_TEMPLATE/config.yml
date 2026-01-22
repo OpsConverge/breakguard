@@ -1,21 +1,33 @@
+# .github/ISSUE_TEMPLATE/config.yml
+
 blank_issues_enabled: false
+
 contact_links:
-  - name: Report a Bug (BreakGuard)
-    url: https://github.com/OpsConverge/breakguard/issues/new?template=breakguard_feedback.yml
-    about: Report incorrect results, missing call sites, crashes, or unexpected behavior
+  - name: 🐞 Bug reports & 🚀 Feature requests
+    url: https://github.com/OpsConverge/breakguard/issues
+    about: |
+      Use GitHub Issues to report bugs or request features.
+      Issue templates will guide you through providing the right details.
+      Note: This is a public support repo; the extension source code is private.
 
-  - name: Request a Feature (BreakGuard)
-    url: https://github.com/OpsConverge/breakguard/issues/new?template=breakguard_feature.yml
-    about: Suggest an improvement or new capability
+  - name: 💬 Questions & usage help
+    url: https://github.com/OpsConverge/breakguard/discussions
+    about: |
+      Ask questions, clarify expected behavior, or discuss usage.
+      Best for “Is this expected?” or “How should I use BreakGuard?”
 
-  - name: Quick Feedback (Google Form)
+  - name: 📝 Quick feedback (no code)
     url: https://forms.gle/ooa8fSWEe1r6bLsB7
-    about: Share quick feedback anonymously (no code or file paths)
+    about: |
+      Lightweight feedback from Marketplace or Open VSX users.
+      No file paths, stack traces, or repro repos required.
 
-  - name: Marketplace Listing
+  - name: 🛒 VS Code Marketplace
     url: https://marketplace.visualstudio.com/items?itemName=OpsConverge.breakguard
-    about: Install BreakGuard from the VS Code Marketplace and view documentation
+    about: |
+      Install BreakGuard, view release notes, and read usage documentation.
 
-  - name: Open VSX Listing
+  - name: 📦 Open VSX
     url: https://open-vsx.org/extension/opsconverge/breakguard
-    about: Install BreakGuard from Open VSX (for non-Microsoft VS Code installations)
+    about: |
+      Install BreakGuard from Open VSX (Cursor, VSCodium, etc.).

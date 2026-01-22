@@ -1,0 +1,113 @@
+# .github/ISSUE_TEMPLATE/feedback.yml
+name: "💬 Feedback"
+description: Share product feedback (Preview). Not a bug report.
+title: "[Feedback]: "
+labels: ["feedback", "preview", "needs-triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ⚠️ **Preview Release**
+
+        BreakGuard is in preview 🚧  
+        This template is for **general feedback** (UX, usefulness, clarity, missing polish).
+        If you found a reproducible defect, use **🐞 Bug Report** instead.
+
+        🔒 **Support Repo Notice**
+        This is a public support repository for BreakGuard.
+        The extension source code is maintained in a private repository, so external PRs may not be possible.
+
+  - type: dropdown
+    id: feedback_type
+    attributes:
+      label: 🧭 What kind of feedback is this?
+      options:
+        - UX / usability
+        - Results quality (too noisy / too quiet)
+        - Performance
+        - Missing capability (but not a full feature request)
+        - Docs / messaging
+        - Other
+    validations:
+      required: true
+
+  - type: textarea
+    id: what_happened
+    attributes:
+      label: 🗣️ What did you notice?
+      description: Describe what you experienced (concise and concrete).
+      placeholder: "The downstream view is helpful, but it's hard to tell why a file is considered impacted."
+    validations:
+      required: true
+
+  - type: textarea
+    id: what_you_expected
+    attributes:
+      label: 🎯 What would “better” look like?
+      description: Describe the outcome you want (behavior/UX).
+      placeholder: "Show a short explanation per impacted file (import path match / symbol usage / re-export chain)."
+    validations:
+      required: true
+
+  - type: textarea
+    id: example
+    attributes:
+      label: 📘 Example (optional)
+      description: If relevant, include a small snippet, screenshot link, or workflow steps.
+      render: markdown
+
+  - type: dropdown
+    id: sentiment
+    attributes:
+      label: 🙂 Overall experience
+      options:
+        - Love it
+        - Useful but rough
+        - Neutral
+        - Frustrating
+        - Blocked
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: ⏱️ Priority
+      options:
+        - Nice to have
+        - Important
+        - Blocking adoption
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: access
+    attributes:
+      label: 🔐 Access & examples
+      options:
+        - label: I do NOT have access to the private BreakGuard source repo
+        - label: I can share a minimal public example repo or steps (if needed)
+
+  - type: input
+    id: breakguard_version
+    attributes:
+      label: 🧩 BreakGuard version
+      placeholder: "e.g. 0.3.1"
+
+  - type: input
+    id: vscode_version
+    attributes:
+      label: 🖥️ VS Code version
+
+  - type: input
+    id: os
+    attributes:
+      label: 💻 OS
+      placeholder: "Windows / macOS / Linux"
+
+  - type: textarea
+    id: additional_context
+    attributes:
+      label: 🧾 Additional context (optional)
+      description: Anything else that helps (constraints, repo type, TS version, etc.).

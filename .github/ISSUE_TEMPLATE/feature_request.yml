@@ -1,0 +1,122 @@
+# .github/ISSUE_TEMPLATE/feature_request.yml
+name: "🚀 Feature Request"
+description: Suggest an improvement or new capability for BreakGuard (Preview).
+title: "[Feature]: "
+labels: ["feature", "preview", "needs-triage"]
+assignees: []
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ⚠️ **Preview Release**
+
+        BreakGuard is evolving quickly 🚧  
+        Feature requests grounded in **real workflows** and **concrete examples** are most useful.
+
+        🔒 **Support Repo Notice**
+        This is a public support repository for BreakGuard.
+        The extension source code is maintained in a private repository, so external PRs may not be possible.
+        Feature ideas, examples, and expected behavior are extremely valuable.
+
+  - type: textarea
+    id: summary
+    attributes:
+      label: ✨ Summary
+      description: One sentence describing the feature.
+      placeholder: "Export breaking-change analysis as a JSON artifact for CI."
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: 😖 Problem statement
+      description: What problem are you trying to solve?
+    validations:
+      required: true
+
+  - type: dropdown
+    id: audience
+    attributes:
+      label: 👥 Who is this for?
+      options:
+        - Library authors / maintainers
+        - App developers
+        - Monorepo maintainers
+        - CI / DevOps pipelines
+        - Other / mixed
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed_solution
+    attributes:
+      label: 🛠️ Proposed solution
+      description: Describe expected behavior (what it should do).
+    validations:
+      required: true
+
+  - type: textarea
+    id: example
+    attributes:
+      label: 📘 Example / scenario (recommended)
+      description: Show a small code or workflow example.
+      render: markdown
+
+  - type: checkboxes
+    id: expected_outcome
+    attributes:
+      label: 🎯 Expected outcome
+      options:
+        - label: Fewer false positives
+        - label: Clearer downstream impact
+        - label: Faster feedback
+        - label: Safer refactors
+        - label: Better CI integration
+        - label: Better IDE UX
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: 🔄 Alternatives considered (optional)
+      description: What do you do today instead?
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: ⏱️ Priority
+      options:
+        - Nice to have
+        - Important
+        - Blocking adoption
+    validations:
+      required: true
+
+  - type: textarea
+    id: constraints
+    attributes:
+      label: 📐 Scope & constraints (optional)
+      description: Performance, repo size, TS version, IDE vs CI, etc.
+
+  - type: input
+    id: breakguard_version
+    attributes:
+      label: 🧩 BreakGuard version
+      placeholder: "e.g. 0.3.1"
+
+  - type: checkboxes
+    id: access
+    attributes:
+      label: 🔐 Access & repro
+      options:
+        - label: I do NOT have access to the private BreakGuard source repo
+        - label: I can share a minimal public repro repo or example
+
+  - type: checkboxes
+    id: help
+    attributes:
+      label: 🤝 Willing to help?
+      options:
+        - label: I can help test this
+        - label: I can provide a repro repo
+        - label: I can validate expected behavior
